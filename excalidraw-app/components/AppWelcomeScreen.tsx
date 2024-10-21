@@ -14,18 +14,15 @@ export const AppWelcomeScreen: React.FC<{
 
   if (isExcalidrawPlusSignedUser) {
     headingContent = t("welcomeScreen.app.center_heading_plus")
-      .split(/(Excalidraw\+)/)
+      .split(/(GrpahiteXdraw\+)/)
       .map((bit, idx) => {
-        if (bit === "Excalidraw+") {
+        if (bit === "GrpahiteXdraw+") {
           return (
             <a
               style={{ pointerEvents: POINTER_EVENTS.inheritFromUI }}
-              href={`${
-                import.meta.env.VITE_APP_PLUS_APP
-              }?utm_source=excalidraw&utm_medium=app&utm_content=welcomeScreenSignedInUser`}
-              key={idx}
+              href={"https://github.com/Surya-palanisamy"}
             >
-              Excalidraw+
+              grpahiteXdraw+
             </a>
           );
         }
