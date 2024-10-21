@@ -23,7 +23,7 @@ export const isBrave = () =>
 export const supportsResizeObserver =
   typeof window !== "undefined" && "ResizeObserver" in window;
 
-export const APP_NAME = "Excalidraw";
+export const APP_NAME = "graphiteXdraw";
 
 // distance when creating text before it's considered `autoResize: false`
 // we're using higher threshold so that clicks that end up being drags
@@ -90,7 +90,7 @@ export enum EVENT {
   VISIBILITY_CHANGE = "visibilitychange",
   SCROLL = "scroll",
   // custom events
-  EXCALIDRAW_LINK = "excalidraw-link",
+  EXCALIDRAW_LINK = "graphiteXdraw-link",
   MENU_ITEM_SELECT = "menu.itemSelect",
   MESSAGE = "message",
   FULLSCREENCHANGE = "fullscreenchange",
@@ -218,8 +218,7 @@ export const ALLOWED_PASTE_MIME_TYPES = ["text/plain", "text/html"] as const;
 export const MIME_TYPES = {
   json: "application/json",
   // excalidraw data
-  excalidraw: "application/vnd.excalidraw+json",
-  excalidrawlib: "application/vnd.excalidrawlib+json",
+  
   // image-encoded excalidraw data
   "excalidraw.svg": "image/svg+xml",
   "excalidraw.png": "image/png",
@@ -308,7 +307,7 @@ export const DEFAULT_MAX_IMAGE_WIDTH_OR_HEIGHT = 1440;
 
 export const MAX_ALLOWED_FILE_BYTES = 4 * 1024 * 1024;
 
-export const SVG_NS = "http://www.w3.org/2000/svg";
+export const SVG_NS ="";
 
 export const ENCRYPTION_KEY_BITS = 128;
 
@@ -427,9 +426,9 @@ export const TOOL_TYPE = {
 } as const;
 
 export const EDITOR_LS_KEYS = {
-  OAI_API_KEY: "excalidraw-oai-api-key",
+  OAI_API_KEY: "GraphiteXdraw",
   // legacy naming (non)scheme
-  MERMAID_TO_EXCALIDRAW: "mermaid-to-excalidraw",
+  MERMAID_TO_GraphiteXdraw: "mermaid-to-graphiteXdraw",
   PUBLISH_LIBRARY: "publish-library-data",
 } as const;
 

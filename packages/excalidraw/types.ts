@@ -91,7 +91,7 @@ export type BinaryFileData = {
   mimeType:
     | ValueOf<typeof IMAGE_MIME_TYPES>
     // future user or unknown file type
-    | typeof MIME_TYPES.binary;
+    
   id: FileId;
   dataURL: DataURL;
   /**
